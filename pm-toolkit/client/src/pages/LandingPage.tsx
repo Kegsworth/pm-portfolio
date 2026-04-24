@@ -47,7 +47,7 @@ const tools = [
     tag: 'Compliance · TCO Calculator · ASHRAE 90.1 · ADA',
     colorVar: '--tool-doorspec',
     cardClass: 'card-doorspec',
-    url: 'https://www.perplexity.ai/computer/a/doorspec-fl-compliance-checker-mArd4vh0SLKQrSaF37VB3A',
+    url: 'https://doorspec-aadm.vercel.app',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -70,7 +70,7 @@ const tools = [
     tag: 'Competitive · 13 Vendors · NA Market · Suite-Linked',
     colorVar: '--tool-battlecard',
     cardClass: 'card-battlecard',
-    url: 'https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g',
+    url: 'https://battlecard-aadm.vercel.app',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -92,7 +92,7 @@ const tools = [
     tag: 'Regulatory · 50-State Code Tracker · 23 Standards',
     colorVar: '--tool-codetracker',
     cardClass: 'card-codetracker',
-    url: 'https://www.perplexity.ai/computer/a/codetracker-standards-monitor-FgkV.eRtRB6F9EjhOkerBQ',
+    url: 'https://codetracker-aadm.vercel.app',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
@@ -112,7 +112,7 @@ const tools = [
     tag: 'Portfolio · 69 Products · Suite-Linked · $1.32B TAM',
     colorVar: '--tool-crosswalk',
     cardClass: 'card-crosswalk',
-    url: 'https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ',
+    url: 'https://crosswalkdb-aadm.vercel.app',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
         <rect x="3" y="3" width="7" height="7" rx="1" />
@@ -135,7 +135,7 @@ const tools = [
     tag: 'Roadmap · Kanban · Win/Loss · $1.32B Market Intel · 11 Tabs',
     colorVar: '--tool-pmstudio',
     cardClass: 'card-pmstudio',
-    url: 'https://www.perplexity.ai/computer/a/pm-studio-roadmap-npd-34GvBY.6Qde3JnTdr2.etw',
+    url: 'https://pmstudio-aadm.vercel.app',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
         <rect x="3" y="3" width="7" height="5" rx="1" />
@@ -159,7 +159,7 @@ const tools = [
     tag: 'Portfolio · ABC Analysis · Margin · Lifecycle',
     colorVar: '--tool-portfolioiq',
     cardClass: 'card-portfolioiq',
-    url: 'https://www.perplexity.ai/computer/a/portfolioiq-sku-rationalizatio-vEecF6HBTDKsRuAiBZYviA',
+    url: 'https://portfolioiq-aadm.vercel.app',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
         <path d="M3 3v18h18" />
