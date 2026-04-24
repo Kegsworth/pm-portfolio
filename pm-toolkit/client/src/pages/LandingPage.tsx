@@ -64,10 +64,10 @@ const tools = [
     subtitle: 'Competitive Intel',
     competency: 'Competitive Strategy',
     description:
-      'Win/loss intelligence across 8 competitors — Allegion/Stanley (post-$900M acquisition), dormakaba, Boon Edam, GEZE, TORMAX, NABCO, Nabtesco, and FAAC — organized by audience context with objection handlers, talk tracks, IoT feature comparison, and pricing tier matrix.',
+      'Win/loss intelligence across 13 competitors — dormakaba, Allegion/Stanley, GEZE, Horton, Boon Edam, Nabtesco/NABCO, TORMAX, FAAC, Portalp, LCN/Norton, Automatic Systems, and Canadian counterparts NABCO/Micom — organized by audience context with objection handlers, talk tracks, feature comparison, and pricing tier matrix.',
     pm_angle:
       'Shows competitive positioning, audience-first communication, and structured product differentiation across multiple market segments. Includes updated Allegion ecosystem framing and IoT/predictive maintenance competitive analysis.',
-    tag: 'Competitive · 8 Vendors · IoT · Suite-Linked',
+    tag: 'Competitive · 13 Vendors · NA Market · Suite-Linked',
     colorVar: '--tool-battlecard',
     cardClass: 'card-battlecard',
     url: 'https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g',
@@ -86,10 +86,10 @@ const tools = [
     subtitle: 'Standards Monitor',
     competency: 'Regulatory Intelligence',
     description:
-      'Live dashboard tracking 30+ standards across 7 categories: ANSI/BHMA A156 series, IBC 2024 Ch.10 egress, NFPA 101-2024 life safety, ASHRAE 90.1-2022 energy, IECC 2024, ICC A117.1 accessibility, ASTM E1886/F842 impact/forced-entry, and ASHRAE 170-2021 healthcare ventilation.',
+      'Live dashboard tracking 23 standards across 9 categories: ANSI/BHMA A156 series, IBC 2024 Ch.10 egress, NFPA 101-2024 life safety, ASHRAE 90.1-2022 energy, IECC 2024, ICC A117.1 accessibility, ASTM E1886/F842 impact/forced-entry, ASHRAE 170-2021 healthcare ventilation, and FBC 9th Edition transition.',
     pm_angle:
       'Illustrates roadmap risk management, regulatory tracking across energy/safety/accessibility codes, and proactive standards monitoring with ASSA ABLOY product impact callouts on every standard.',
-    tag: 'Regulatory · 50-State Code Tracker · 30+ Standards',
+    tag: 'Regulatory · 50-State Code Tracker · 23 Standards',
     colorVar: '--tool-codetracker',
     cardClass: 'card-codetracker',
     url: 'https://www.perplexity.ai/computer/a/codetracker-standards-monitor-FgkV.eRtRB6F9EjhOkerBQ',
@@ -106,10 +106,10 @@ const tools = [
     subtitle: 'Product-Standard Crosswalk',
     competency: 'Portfolio Mapping',
     description:
-      'Interactive matrix mapping 18+ ASSA ABLOY product lines — including SL500 R104 (HVHZ/ASTM E1886), SW60 slim retrofit, VersaMax ICU/CCU, and RECORD TSA series — to their certifications, sensor compatibility, and Florida NOA status. Includes sensor-type filter and market context widget ($1.32B TAM).',
+      'Interactive matrix mapping 69 products across ASSA ABLOY, dormakaba, Stanley, and Horton — including SL500 R104 (HVHZ/ASTM E1886), SW60 slim retrofit, VersaMax ICU/CCU, and RECORD TSA series — to their certifications, sensor compatibility, and Florida NOA status. Includes sensor-type filter and market context widget ($1.32B TAM).',
     pm_angle:
       'Demonstrates data-driven product portfolio analysis, certification gap identification, sensor ecosystem positioning, and market sizing framing across NA pedestrian door verticals.',
-    tag: 'Portfolio · 65+ Products · Suite-Linked · $1.32B TAM',
+    tag: 'Portfolio · 69 Products · Suite-Linked · $1.32B TAM',
     colorVar: '--tool-crosswalk',
     cardClass: 'card-crosswalk',
     url: 'https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ',
@@ -129,9 +129,9 @@ const tools = [
     subtitle: 'Enterprise NPD Platform',
     competency: 'NPD Management',
     description:
-      'Enterprise PM command center for ASSA ABLOY + RECORD NA pedestrian portfolio. 11 tabs: Portfolio Dashboard, Roadmap (Calendar + Kanban + List), Analytics, Stage-Gate G0–G5, NPD Handoffs, VOC, Win/Loss Intelligence Engine, Capacity, Forecast, Launch Readiness, and Market Intelligence. 38 active initiatives, IoT roadmap track, and Win/Loss pattern analysis across 15 deal records.',
+      'Enterprise PM command center for ASSA ABLOY + RECORD NA pedestrian portfolio. 11 tabs: Portfolio Dashboard, Roadmap (Calendar + Kanban + List), Analytics, Stage-Gate G0–G5, NPD Handoffs, VOC, Win/Loss Intelligence Engine, Capacity, Forecast, Launch Readiness, and Market Intelligence. 35 active initiatives, IoT roadmap track, and Win/Loss pattern analysis across 15 deal records.',
     pm_angle:
-      'Demonstrates enterprise SaaS product thinking: Gantt calendar with initiative bars, Kanban with stage columns, Win/Loss engine with pattern charts (53% win rate, top driver: AAADM service network), Market Intelligence with $1.32B→$1.88B TAM, and state-by-state regulatory intel across 53 markets.',
+      'Demonstrates enterprise SaaS product thinking: Gantt calendar with initiative bars, Kanban with stage columns, Win/Loss engine with pattern charts (15 deal records, top driver: AAADM service network), Market Intelligence with $1.32B→$1.88B TAM, and state-by-state regulatory intel across 51 markets.',
     tag: 'Roadmap · Kanban · Win/Loss · $1.32B Market Intel · 11 Tabs',
     colorVar: '--tool-pmstudio',
     cardClass: 'card-pmstudio',
@@ -153,7 +153,7 @@ const tools = [
     subtitle: 'SKU Rationalization Engine',
     competency: 'Portfolio Rationalization',
     description:
-      'Enterprise product portfolio rationalization engine for ASSA ABLOY NA pedestrian division. ABC/XYZ classification across 47 SKUs with margin heat maps, component network overlap analysis, lifecycle stage scoring (BCG-aligned), and AI-driven invest/optimize/sunset recommendations.',
+      'Enterprise product portfolio rationalization engine for ASSA ABLOY NA pedestrian division. ABC/XYZ classification across 37 SKUs with margin heat maps, component network overlap analysis, lifecycle stage scoring (BCG-aligned), and AI-driven invest/optimize/sunset recommendations.',
     pm_angle:
       'Demonstrates business-owner thinking: financial fluency (gross margin bps, cost-to-serve per SKU), portfolio-level framing, documented trade-offs, and the ability to defend go/no-go decisions with data — exactly what VP-level interviewers screen for.',
     tag: 'Portfolio · ABC Analysis · Margin · Lifecycle',
@@ -174,9 +174,9 @@ const tools = [
 
 const stats = [
   { value: 6, suffix: '', label: 'PM Tools', decimals: 0 },
-  { value: 8, suffix: '', label: 'Competitors tracked', decimals: 0 },
-  { value: 30, suffix: '+', label: 'Standards monitored', decimals: 0 },
-  { value: 47, suffix: '', label: 'SKUs analyzed', decimals: 0 },
+  { value: 13, suffix: '', label: 'Competitors tracked', decimals: 0 },
+  { value: 23, suffix: '', label: 'Standards monitored', decimals: 0 },
+  { value: 37, suffix: '', label: 'SKUs analyzed', decimals: 0 },
   { value: 1.32, suffix: 'B', label: 'Market mapped', prefix: '$', decimals: 2 },
 ];
 
@@ -617,9 +617,9 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">THE SUITE</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">Eight tools. One entity graph. Zero silos.</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">Six tools. One entity graph. Zero silos.</h2>
             <p className="mt-3 text-sm text-muted-foreground max-w-2xl leading-relaxed">
-              Each tool targets a distinct PM competency — compliance, competitive strategy, regulatory intelligence, portfolio analysis, NPD management, portfolio rationalization, and unified systems ops — all wired to a shared entity graph across 15 products × 15 standards × 8 competitors.
+              Each tool targets a distinct PM competency — compliance, competitive strategy, regulatory intelligence, portfolio analysis, NPD management, and portfolio rationalization — all wired to a shared entity graph across 69 mapped products × 23 standards × 13 competitors.
             </p>
           </motion.div>
 
@@ -650,7 +650,7 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">ARCHITECTURE</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">One entity graph. Six tools. Zero silos.</h2>
             <p className="mt-3 text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Every tool shares the same underlying data layer — a live entity graph spanning 15 products, 15 standards, 10 jurisdictions, and 8 competitors. A NOA expiry in DoorSpec cascades to CodeTracker, surfaces in CrosswalkDB revenue risk, and triggers BattleCard positioning updates automatically.
+              Every tool shares the same underlying data layer — a live entity graph spanning 69 mapped products, 23 standards, 10 jurisdictions, and 13 competitors. A NOA expiry in DoorSpec cascades to CodeTracker, surfaces in CrosswalkDB revenue risk, and triggers BattleCard positioning updates automatically.
             </p>
           </motion.div>
 
