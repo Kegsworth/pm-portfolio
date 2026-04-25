@@ -236,7 +236,7 @@ const credentials = [
   { icon: <BookOpen className="w-4 h-4" />, label: 'Lean Six Sigma Green Belt' },
   { icon: <Layers className="w-4 h-4" />, label: 'Led CPI engineering team at ASSA ABLOY' },
   { icon: <Award className="w-4 h-4" />, label: 'HVHZ compliance specialist — Florida market' },
-  { icon: <Shield className="w-4 h-4" />, label: 'U.S. military — technical role, Secret clearance' },
+  { icon: <Shield className="w-4 h-4" />, label: 'U.S. military — special electronics, Secret clearance' },
   { icon: <Building2 className="w-4 h-4" />, label: 'Daifuku / Amazon automated facilities' },
 ];
 

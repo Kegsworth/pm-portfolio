@@ -2180,7 +2180,7 @@ export default function BattleCardApp() {
       {/* Footer */}
       <footer className="border-t border-border px-4 md:px-6 py-3 text-center">
         <p className="text-xs text-muted-foreground">
-          BattleCard &middot; ASSA ABLOY Entrance Systems &middot; For internal use only &middot; Based on ANSI/BHMA A156.10/19/38, FBC 8th Ed.
+          BattleCard &middot; ASSA ABLOY Entrance Systems &middot; Based on ANSI/BHMA A156.10/19/38, FBC 8th Ed.
         </p>
       </footer>
     </div>
