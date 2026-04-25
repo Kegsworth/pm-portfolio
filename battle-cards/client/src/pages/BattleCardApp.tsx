@@ -832,7 +832,7 @@ function CompProfileCard({ competitorId }: { competitorId: CompetitorId }) {
       {/* PM Roadmap deep link */}
       <div className="mt-3 pt-2 border-t border-border/50">
         <button
-          onClick={() => window.open("https://www.perplexity.ai/computer/a/pm-studio-enterprise-npd-platf-34GvBY.6Qde3JnTdr2.etw", "_blank")}
+          onClick={() => window.open("https://pmstudio-aadm.vercel.app", "_blank")}
           className="inline-flex items-center gap-2 text-[11px] font-medium text-violet-700 dark:text-violet-300 bg-violet-50 dark:bg-violet-900/20 border border-violet-200 dark:border-violet-700/50 px-2.5 py-1 rounded-full hover:bg-violet-100 dark:hover:bg-violet-900/40 transition-colors"
           data-testid="pm-roadmap-link"
         >
@@ -2037,11 +2037,11 @@ const MAIN_TABS: { id: MainTab; label: string; icon: React.ReactNode }[] = [
 
 // ── Suite URLs ──────────────────────────────────────────────────────────────
 const SUITE_TOOLS = [
-  { id: "doorspec",    label: "DoorSpec",    url: "https://www.perplexity.ai/computer/a/doorspec-fl-compliance-checker-mArd4vh0SLKQrSaF37VB3A" },
-  { id: "battlecard", label: "BattleCard",  url: "https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g" },
-  { id: "codetracker",label: "CodeTracker", url: "https://www.perplexity.ai/computer/a/codetracker-standards-monitor-FgkV.eRtRB6F9EjhOkerBQ" },
-  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ" },
-  { id: "pmstudio",   label: "PM Studio",   url: "https://www.perplexity.ai/computer/a/pm-studio-enterprise-npd-platf-34GvBY.6Qde3JnTdr2.etw" },
+  { id: "doorspec",    label: "DoorSpec",    url: "https://doorspec-aadm.vercel.app" },
+  { id: "battlecard", label: "BattleCard",  url: "https://battlecard-aadm.vercel.app" },
+  { id: "codetracker",label: "CodeTracker", url: "https://codetracker-aadm.vercel.app" },
+  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://crosswalkdb-aadm.vercel.app" },
+  { id: "pmstudio",   label: "PM Studio",   url: "https://pmstudio-aadm.vercel.app" },
 ] as const;
 
 function SuiteNav({ activeTool }: { activeTool: string }) {

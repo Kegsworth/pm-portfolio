@@ -113,7 +113,7 @@
 
   html {
     scroll-behavior: smooth;
-    color-scheme: light;
+    color-scheme: light dark;
   }
 
   body {
@@ -129,5 +129,39 @@
     font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: -0.02em;
+  }
+
+  .dark {
+    --background:            222 20% 11%;
+    --foreground:            210 15% 92%;
+    --card:                  222 18% 14%;
+    --card-foreground:       210 15% 92%;
+    --card-border:           220 15% 22%;
+    --popover:               222 18% 14%;
+    --popover-foreground:    210 15% 92%;
+    --popover-border:        220 15% 22%;
+    --border:                220 15% 22%;
+    --input:                 220 15% 20%;
+    --sidebar:               222 18% 13%;
+    --sidebar-foreground:    210 15% 88%;
+    --sidebar-border:        220 15% 20%;
+    --sidebar-accent:        220 15% 18%;
+    --sidebar-accent-foreground: 210 15% 88%;
+    --secondary:             220 15% 18%;
+    --secondary-foreground:  210 15% 88%;
+    --muted:                 220 15% 16%;
+    --muted-foreground:      215 12% 55%;
+    --accent:                220 15% 18%;
+    --accent-foreground:     210 15% 88%;
+    --elevate-1: rgba(0,0,0,0.15);
+    --elevate-2: rgba(0,0,0,0.25);
+    --button-outline: rgba(255,255,255,0.08);
+    --badge-outline:  rgba(255,255,255,0.06);
+    --shadow-2xs: 0px 1px 2px 0px rgba(0,0,0,0.3);
+    --shadow-xs:  0px 2px 4px 0px rgba(0,0,0,0.28);
+    --shadow-sm:  0px 2px 4px 0px rgba(0,0,0,0.25), 0px 1px 2px -1px rgba(0,0,0,0.20);
+    --shadow:     0px 4px 8px 0px rgba(0,0,0,0.25), 0px 2px 4px -2px rgba(0,0,0,0.18);
+    --shadow-md:  0px 8px 16px -2px rgba(0,0,0,0.25), 0px 4px 6px -2px rgba(0,0,0,0.18);
+    --shadow-lg:  0px 16px 24px -4px rgba(0,0,0,0.25), 0px 8px 10px -2px rgba(0,0,0,0.15);
   }
 }

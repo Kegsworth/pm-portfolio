@@ -1628,11 +1628,11 @@ function SeverityBadge({ severity }: { severity: "required" | "not_required" | "
 
 // ── Suite URLs ──────────────────────────────────────────────────────────────
 const SUITE_TOOLS = [
-  { id: "doorspec",    label: "DoorSpec",    url: "https://www.perplexity.ai/computer/a/doorspec-fl-compliance-checker-mArd4vh0SLKQrSaF37VB3A" },
-  { id: "battlecard", label: "BattleCard",  url: "https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g" },
-  { id: "codetracker",label: "CodeTracker", url: "https://www.perplexity.ai/computer/a/codetracker-standards-monitor-FgkV.eRtRB6F9EjhOkerBQ" },
-  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ" },
-  { id: "pmstudio",   label: "PM Studio",   url: "https://www.perplexity.ai/computer/a/pm-studio-enterprise-npd-platf-34GvBY.6Qde3JnTdr2.etw" },
+  { id: "doorspec",    label: "DoorSpec",    url: "https://doorspec-aadm.vercel.app" },
+  { id: "battlecard", label: "BattleCard",  url: "https://battlecard-aadm.vercel.app" },
+  { id: "codetracker",label: "CodeTracker", url: "https://codetracker-aadm.vercel.app" },
+  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://crosswalkdb-aadm.vercel.app" },
+  { id: "pmstudio",   label: "PM Studio",   url: "https://pmstudio-aadm.vercel.app" },
 ] as const;
 
 function SuiteNav({ activeTool }: { activeTool: string }) {
@@ -2638,7 +2638,7 @@ export default function ComplianceChecker() {
                                   {/* Crosswalk hint */}
                                   {p.crosswalkHint && (
                                     <button
-                                      onClick={() => window.open("https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ", "_blank")}
+                                      onClick={() => window.open("https://crosswalkdb-aadm.vercel.app", "_blank")}
                                       className="text-[10px] text-primary/80 italic mt-1 hover:text-primary hover:underline text-left block"
                                     >
                                       {p.crosswalkHint} → See matching ASSA ABLOY products in CrosswalkDB
@@ -3296,7 +3296,7 @@ export default function ComplianceChecker() {
                                       )}
                                       {p.crosswalkHint && (
                                         <button
-                                          onClick={() => window.open("https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ", "_blank")}
+                                          onClick={() => window.open("https://crosswalkdb-aadm.vercel.app", "_blank")}
                                           className="text-[10px] text-primary/80 italic hover:text-primary hover:underline text-left block"
                                         >
                                           {p.crosswalkHint} → See matching ASSA ABLOY products in CrosswalkDB

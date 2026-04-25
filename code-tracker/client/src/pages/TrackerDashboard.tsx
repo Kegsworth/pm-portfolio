@@ -413,7 +413,7 @@ function EnhancedChangeCard({
               <a
                 className="text-xs text-primary/70 hover:text-primary cursor-pointer italic"
                 data-testid={`crosswalk-hint-${change.id}`}
-                onClick={() => window.open("https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ", "_blank")}
+                onClick={() => window.open("https://crosswalkdb-aadm.vercel.app", "_blank")}
               >
                 → View affected products in CrosswalkDB
               </a>
@@ -1129,7 +1129,7 @@ function StandardsLibrary({ pinned, onPin }: { pinned: Set<string>; onPin: (id: 
                         <a
                           className="ml-2 text-primary/70 italic cursor-pointer hover:text-primary"
                           data-testid={`lib-crosswalk-hint-${std.id}`}
-                          onClick={() => window.open("https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ", "_blank")}
+                          onClick={() => window.open("https://crosswalkdb-aadm.vercel.app", "_blank")}
                         >
                           → View affected products in CrosswalkDB
                         </a>
@@ -1152,7 +1152,7 @@ function StandardsLibrary({ pinned, onPin }: { pinned: Set<string>; onPin: (id: 
                   {isFBC9 && (
                     <div className="mb-2">
                       <button
-                        onClick={() => window.open("https://www.perplexity.ai/computer/a/doorspec-fl-compliance-checker-mArd4vh0SLKQrSaF37VB3A", "_blank")}
+                        onClick={() => window.open("https://doorspec-aadm.vercel.app", "_blank")}
                         className="inline-flex items-center gap-1.5 text-[11px] font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700/50 px-2.5 py-1 rounded-full transition-colors"
                       >
                         <span>Check FL compliance for this standard</span>
@@ -2085,11 +2085,11 @@ function StateCodesTab() {
 
 // ── Suite URLs ──────────────────────────────────────────────────────────────
 const SUITE_TOOLS = [
-  { id: "doorspec",    label: "DoorSpec",    url: "https://www.perplexity.ai/computer/a/doorspec-fl-compliance-checker-mArd4vh0SLKQrSaF37VB3A" },
-  { id: "battlecard", label: "BattleCard",  url: "https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g" },
-  { id: "codetracker",label: "CodeTracker", url: "https://www.perplexity.ai/computer/a/codetracker-standards-monitor-FgkV.eRtRB6F9EjhOkerBQ" },
-  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ" },
-  { id: "pmstudio",   label: "PM Studio",   url: "https://www.perplexity.ai/computer/a/pm-studio-enterprise-npd-platf-34GvBY.6Qde3JnTdr2.etw" },
+  { id: "doorspec",    label: "DoorSpec",    url: "https://doorspec-aadm.vercel.app" },
+  { id: "battlecard", label: "BattleCard",  url: "https://battlecard-aadm.vercel.app" },
+  { id: "codetracker",label: "CodeTracker", url: "https://codetracker-aadm.vercel.app" },
+  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://crosswalkdb-aadm.vercel.app" },
+  { id: "pmstudio",   label: "PM Studio",   url: "https://pmstudio-aadm.vercel.app" },
 ] as const;
 
 function SuiteNav({ activeTool }: { activeTool: string }) {

@@ -619,7 +619,7 @@ function ProductDrawer({
           <div className="pt-1">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">Related Tools</p>
             <button
-              onClick={() => window.open("https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g", "_blank")}
+              onClick={() => window.open("https://battlecard-aadm.vercel.app", "_blank")}
               className="inline-flex items-center gap-2 text-xs font-medium text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 px-3 py-1.5 rounded-full hover:bg-amber-100 dark:hover:bg-amber-900/40 transition-colors"
               data-testid="battlecard-link"
             >
@@ -2005,11 +2005,11 @@ function ExtendedStandardsWidget() {
 // ─── Main App ─────────────────────────────────────────────────────────────────
 // ── Suite URLs ──────────────────────────────────────────────────────────────
 const SUITE_TOOLS = [
-  { id: "doorspec",    label: "DoorSpec",    url: "https://www.perplexity.ai/computer/a/doorspec-fl-compliance-checker-mArd4vh0SLKQrSaF37VB3A" },
-  { id: "battlecard", label: "BattleCard",  url: "https://www.perplexity.ai/computer/a/battlecard-competitive-intel-4Mif6CAuTo6iJjchoSDR6g" },
-  { id: "codetracker",label: "CodeTracker", url: "https://www.perplexity.ai/computer/a/codetracker-standards-monitor-FgkV.eRtRB6F9EjhOkerBQ" },
-  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://www.perplexity.ai/computer/a/crosswalkdb-product-standard-c-XJ6fTEzDTwi0G8I9Vu1sVQ" },
-  { id: "pmstudio",   label: "PM Studio",   url: "https://www.perplexity.ai/computer/a/pm-studio-enterprise-npd-platf-34GvBY.6Qde3JnTdr2.etw" },
+  { id: "doorspec",    label: "DoorSpec",    url: "https://doorspec-aadm.vercel.app" },
+  { id: "battlecard", label: "BattleCard",  url: "https://battlecard-aadm.vercel.app" },
+  { id: "codetracker",label: "CodeTracker", url: "https://codetracker-aadm.vercel.app" },
+  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://crosswalkdb-aadm.vercel.app" },
+  { id: "pmstudio",   label: "PM Studio",   url: "https://pmstudio-aadm.vercel.app" },
 ] as const;
 
 function SuiteNav({ activeTool }: { activeTool: string }) {
