@@ -322,7 +322,7 @@ function NewInitiativeModal({ open, onClose, onAdd }: NewInitiativeModalProps) {
   const [form, setForm] = useState({
     initiative: "", brand: "ASSA ABLOY" as Brand, productLine: "", status: "concept" as RoadmapStatus,
     gateStage: "G0_idea" as GateStage, owner: "J. Tubbs", impact: "medium" as "low" | "medium" | "high" | "critical",
-    effort: "M" as "S" | "M" | "L" | "XL", quarter: "Q3", year: "2025",
+    effort: "M" as "S" | "M" | "L" | "XL", quarter: "Q3", year: "2026",
     description: "", budget: "", region: "National" as const, priority: "P2",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -362,7 +362,7 @@ function NewInitiativeModal({ open, onClose, onAdd }: NewInitiativeModalProps) {
     onAdd(newItem);
     toast({ title: "Initiative created", description: `${form.initiative} added to roadmap.` });
     onClose();
-    setForm({ initiative: "", brand: "ASSA ABLOY", productLine: "", status: "concept", gateStage: "G0_idea", owner: "J. Tubbs", impact: "medium", effort: "M", quarter: "Q3", year: "2025", description: "", budget: "", region: "National", priority: "P2" });
+    setForm({ initiative: "", brand: "ASSA ABLOY", productLine: "", status: "concept", gateStage: "G0_idea", owner: "J. Tubbs", impact: "medium", effort: "M", quarter: "Q3", year: "2026", description: "", budget: "", region: "National", priority: "P2" });
   };
 
   if (!open) return null;
@@ -493,6 +493,7 @@ function NewInitiativeModal({ open, onClose, onAdd }: NewInitiativeModalProps) {
                     <SelectItem value="2025">2025</SelectItem>
                     <SelectItem value="2026">2026</SelectItem>
                     <SelectItem value="2027">2027</SelectItem>
+                    <SelectItem value="2028">2028</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -1429,7 +1430,7 @@ function PortfolioTab({
 
 // ─── CALENDAR VIEW ─────────────────────────────────────────────────────────
 
-const CALENDAR_YEARS = [2025, 2026, 2027];
+const CALENDAR_YEARS = [2026, 2027, 2028];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_WIDTH = 56; // px per month
 const ROW_HEIGHT = 36;

@@ -104,7 +104,7 @@ function App() {
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary border border-border text-xs text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  Live · FY2024 Q4
+                  FY2024 Q4 Portfolio Review
                 </div>
               </div>
             </header>

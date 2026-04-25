@@ -114,7 +114,7 @@ const DOOR_META: Record<DoorType, { desc: string; standard: string; icon: React.
   },
   revolving: {
     desc: "Rotating compartment — hotels, airports, energy-conserving lobbies",
-    standard: "ANSI/BHMA A156.27-2019",
+    standard: "ANSI/BHMA A156.27-2024",
     icon: <DoorOpen size={18} />,
   },
   telescoping: {
@@ -2701,7 +2701,7 @@ export default function ComplianceChecker() {
                                       { code: "ANSI/BHMA A156.10", edition: "2024", scope: "Full-energy automatic pedestrian doors" },
                                       { code: "ANSI/BHMA A156.19", edition: "2019", scope: "Low-energy & power-assist swing doors" },
                                       { code: "ANSI/BHMA A156.38", edition: "2019", scope: "Low-energy automatic sliding doors" },
-                                      { code: "ANSI/BHMA A156.27", edition: "2019", scope: "Revolving doors" },
+                                      { code: "ANSI/BHMA A156.27", edition: "2024", scope: "Revolving doors" },
                                       { code: "ADA Standards", edition: "2010", scope: "Accessible design for doors & entrances" },
                                       { code: "IBC", edition: "2024", scope: "Building code — egress & occupancy" },
                                       { code: "FBC", edition: "9th Ed. (eff. 12/31/2026)", scope: "Florida Building Code" },

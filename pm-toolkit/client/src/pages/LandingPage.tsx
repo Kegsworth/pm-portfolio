@@ -774,7 +774,7 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
                 data-testid="about-looking-for"
               >
                 <span className="font-semibold text-primary">Looking for: </span>
-                <span className="text-muted-foreground">PM or strategy roles in engineering, technology, or industrial SaaS. Available immediately.</span>
+                <span className="text-muted-foreground">PM roles in engineering, technology, or industrial hardware. Open to corporate strategy roles where domain expertise in complex technical markets is the differentiator. Available immediately.</span>
               </div>
 
               <div className="pt-2 flex flex-wrap gap-4">
