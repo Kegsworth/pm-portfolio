@@ -322,7 +322,7 @@ function NewInitiativeModal({ open, onClose, onAdd }: NewInitiativeModalProps) {
   const [form, setForm] = useState({
     initiative: "", brand: "ASSA ABLOY" as Brand, productLine: "", status: "concept" as RoadmapStatus,
     gateStage: "G0_idea" as GateStage, owner: "J. Tubbs", impact: "medium" as "low" | "medium" | "high" | "critical",
-    effort: "M" as "S" | "M" | "L" | "XL", quarter: "Q3", year: "2025",
+    effort: "M" as "S" | "M" | "L" | "XL", quarter: "Q3", year: "2026",
     description: "", budget: "", region: "National" as const, priority: "P2",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -362,7 +362,7 @@ function NewInitiativeModal({ open, onClose, onAdd }: NewInitiativeModalProps) {
     onAdd(newItem);
     toast({ title: "Initiative created", description: `${form.initiative} added to roadmap.` });
     onClose();
-    setForm({ initiative: "", brand: "ASSA ABLOY", productLine: "", status: "concept", gateStage: "G0_idea", owner: "J. Tubbs", impact: "medium", effort: "M", quarter: "Q3", year: "2025", description: "", budget: "", region: "National", priority: "P2" });
+    setForm({ initiative: "", brand: "ASSA ABLOY", productLine: "", status: "concept", gateStage: "G0_idea", owner: "J. Tubbs", impact: "medium", effort: "M", quarter: "Q3", year: "2026", description: "", budget: "", region: "National", priority: "P2" });
   };
 
   if (!open) return null;
@@ -493,6 +493,7 @@ function NewInitiativeModal({ open, onClose, onAdd }: NewInitiativeModalProps) {
                     <SelectItem value="2025">2025</SelectItem>
                     <SelectItem value="2026">2026</SelectItem>
                     <SelectItem value="2027">2027</SelectItem>
+                    <SelectItem value="2028">2028</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -1429,7 +1430,7 @@ function PortfolioTab({
 
 // ─── CALENDAR VIEW ─────────────────────────────────────────────────────────
 
-const CALENDAR_YEARS = [2025, 2026, 2027];
+const CALENDAR_YEARS = [2026, 2027, 2028];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_WIDTH = 56; // px per month
 const ROW_HEIGHT = 36;
@@ -5072,6 +5073,41 @@ function MarketIntelTab() {
   );
 }
 
+// ─── SUITE NAV ───────────────────────────────────────────────────────────────
+
+const SUITE_TOOLS = [
+  { id: "doorspec",    label: "DoorSpec",    url: "https://doorspec-aadm.vercel.app" },
+  { id: "battlecard", label: "BattleCard",  url: "https://battlecard-aadm.vercel.app" },
+  { id: "codetracker",label: "CodeTracker", url: "https://codetracker-aadm.vercel.app" },
+  { id: "crosswalkdb",label: "CrosswalkDB", url: "https://crosswalkdb-aadm.vercel.app" },
+  { id: "pmstudio",   label: "PM Studio",   url: "https://pmstudio-aadm.vercel.app" },
+  { id: "portfolioiq",label: "PortfolioIQ", url: "https://portfolioiq-aadm.vercel.app" },
+] as const;
+
+function SuiteNav({ activeTool }: { activeTool: string }) {
+  return (
+    <div className="w-full bg-zinc-900 dark:bg-zinc-950 border-b border-zinc-700/60 px-4 py-1 flex items-center gap-1 overflow-x-auto scrollbar-none">
+      <span className="text-[10px] font-semibold text-zinc-500 uppercase tracking-widest mr-2 shrink-0">PM Suite</span>
+      {SUITE_TOOLS.map((tool) => {
+        const isActive = tool.id === activeTool;
+        return (
+          <button
+            key={tool.id}
+            onClick={() => !isActive && window.open(tool.url, "_blank")}
+            className={`shrink-0 px-2.5 py-1 rounded text-[11px] font-medium transition-colors ${
+              isActive
+                ? "bg-primary text-white cursor-default"
+                : "text-zinc-400 hover:text-cyan-300 hover:bg-zinc-800 cursor-pointer"
+            }`}
+          >
+            {tool.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 // ─── MAIN COMPONENT ───────────────────────────────────────────────────────────
 
 export default function PMStudio() {
@@ -5331,8 +5367,13 @@ export default function PMStudio() {
         </AnimatePresence>
       </header>
 
+      {/* Suite Nav */}
+      <div className="fixed top-14 left-0 right-0 z-40">
+        <SuiteNav activeTool="pmstudio" />
+      </div>
+
       {/* Main Content */}
-      <main className="pt-14 min-h-screen" onClick={() => { setNotifOpen(false); setProfileOpen(false); }}>
+      <main className="pt-20 min-h-screen" onClick={() => { setNotifOpen(false); setProfileOpen(false); }}>
         <AnimatePresence mode="wait">
           {activeTab === "portfolio" && (
             <PortfolioTab

@@ -236,7 +236,7 @@ const credentials = [
   { icon: <BookOpen className="w-4 h-4" />, label: 'Lean Six Sigma Green Belt' },
   { icon: <Layers className="w-4 h-4" />, label: 'Led CPI engineering team at ASSA ABLOY' },
   { icon: <Award className="w-4 h-4" />, label: 'HVHZ compliance specialist — Florida market' },
-  { icon: <Shield className="w-4 h-4" />, label: 'U.S. military — technical role, Secret clearance' },
+  { icon: <Shield className="w-4 h-4" />, label: 'U.S. military — special electronics, Secret clearance' },
   { icon: <Building2 className="w-4 h-4" />, label: 'Daifuku / Amazon automated facilities' },
 ];
 
@@ -774,7 +774,7 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
                 data-testid="about-looking-for"
               >
                 <span className="font-semibold text-primary">Looking for: </span>
-                <span className="text-muted-foreground">PM roles in engineering, technology, or industrial SaaS. Available Summer 2026.</span>
+                <span className="text-muted-foreground">PM roles in engineering, technology, or industrial hardware. Open to corporate strategy roles where domain expertise in complex technical markets is the differentiator. Available immediately.</span>
               </div>
 
               <div className="pt-2 flex flex-wrap gap-4">

@@ -68,8 +68,9 @@
   }
 
   * { @apply border-border; box-sizing: border-box; }
-  html { scroll-behavior: smooth; color-scheme: light; }
+  html { scroll-behavior: smooth; color-scheme: light; overflow-x: hidden; }
   body {
+    overflow-x: hidden;
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     font-family: var(--font-sans);

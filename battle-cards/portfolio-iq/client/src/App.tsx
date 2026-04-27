@@ -22,6 +22,39 @@ const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: 'recommendations', label: 'Recommendations', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
 ];
 
+const SUITE_TOOLS = [
+  { id: 'doorspec',    label: 'DoorSpec',    url: 'https://doorspec-aadm.vercel.app' },
+  { id: 'battlecard', label: 'BattleCard',  url: 'https://battlecard-aadm.vercel.app' },
+  { id: 'codetracker',label: 'CodeTracker', url: 'https://codetracker-aadm.vercel.app' },
+  { id: 'crosswalkdb',label: 'CrosswalkDB', url: 'https://crosswalkdb-aadm.vercel.app' },
+  { id: 'pmstudio',   label: 'PM Studio',   url: 'https://pmstudio-aadm.vercel.app' },
+  { id: 'portfolioiq',label: 'PortfolioIQ', url: 'https://portfolioiq-aadm.vercel.app' },
+] as const;
+
+function SuiteNav({ activeTool }: { activeTool: string }) {
+  return (
+    <div className="w-full bg-zinc-900 border-b border-zinc-700/60 px-4 py-1 flex items-center gap-1 overflow-x-auto scrollbar-none flex-shrink-0">
+      <span className="text-[10px] font-semibold text-zinc-500 uppercase tracking-widest mr-2 shrink-0">PM Suite</span>
+      {SUITE_TOOLS.map((tool) => {
+        const isActive = tool.id === activeTool;
+        return (
+          <button
+            key={tool.id}
+            onClick={() => !isActive && window.open(tool.url, '_blank')}
+            className={`shrink-0 px-2.5 py-1 rounded text-[11px] font-medium transition-colors ${
+              isActive
+                ? 'bg-primary text-white cursor-default'
+                : 'text-zinc-400 hover:text-cyan-300 hover:bg-zinc-800 cursor-pointer'
+            }`}
+          >
+            {tool.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>('overview');
   const [dark, setDark] = useState(false);
@@ -37,7 +70,7 @@ function App() {
         <Toaster />
         <div className="flex h-screen overflow-hidden bg-background text-foreground">
           {/* Sidebar */}
-          <aside className="w-64 flex-shrink-0 flex flex-col border-r border-border bg-sidebar">
+          <aside className="hidden md:flex w-64 flex-shrink-0 flex-col border-r border-border bg-sidebar">
             {/* Logo */}
             <div className="px-5 py-5 border-b border-border flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -91,6 +124,8 @@ function App() {
 
           {/* Main content */}
           <main className="flex-1 overflow-hidden flex flex-col">
+            {/* Suite Nav */}
+            <SuiteNav activeTool="portfolioiq" />
             {/* Top bar */}
             <header className="flex items-center justify-between px-6 py-4 border-b border-border bg-[hsl(220_22%_7%)] flex-shrink-0">
               <div>
@@ -104,10 +139,27 @@ function App() {
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary border border-border text-xs text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  Live · FY2024 Q4
+                  FY2024 Q4 Portfolio Review
                 </div>
               </div>
             </header>
+
+            {/* Mobile tab nav — visible only on small screens */}
+            <div className="md:hidden flex overflow-x-auto gap-1 px-3 py-2 border-b border-border bg-background flex-shrink-0 scrollbar-none">
+              {TABS.map((t) => (
+                <button
+                  key={t.id}
+                  onClick={() => setActiveTab(t.id as Tab)}
+                  className={`shrink-0 px-3 py-1.5 rounded text-[11px] font-medium transition-colors ${
+                    activeTab === t.id
+                      ? 'bg-primary text-white'
+                      : 'text-muted-foreground hover:bg-muted'
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
 
             {/* Tab content */}
             <div className="flex-1 overflow-auto">
