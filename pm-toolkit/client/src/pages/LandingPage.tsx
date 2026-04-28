@@ -147,6 +147,28 @@ const tools = [
     ),
   },
   {
+    id: 'iptracker',
+    slug: 'iptracker',
+    name: 'IP Tracker',
+    subtitle: 'Patent Intelligence Engine',
+    competency: 'Competitive IP Strategy',
+    description:
+      'Patent intelligence platform covering 146 US patents across ASSA ABLOY/Record/Entrematic and all 13 major entrance systems competitors. Tracks expiry timelines, identifies whitespace opportunities, and flags patents entering public domain — giving PM teams advance notice on where IP barriers are falling.',
+    pm_angle:
+      'Demonstrates strategic foresight: IP expiry creates M&A, licensing, and product entry windows. Mapping competitor patent portfolios shows the ability to identify long-cycle strategic threats and opportunities — the kind of thinking that separates PMs from engineers.',
+    tag: 'IP Strategy · Patent Expiry · Competitive Intelligence',
+    colorVar: '--tool-iptracker',
+    cardClass: 'card-iptracker',
+    url: 'https://iptracker-aadm.vercel.app',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M9 9a3 3 0 1 1 4.5 2.598c-.9.52-1.5 1.5-1.5 2.402" />
+        <circle cx="12" cy="17.5" r="0.75" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
+  {
     id: 'portfolioiq',
     slug: 'portfolioiq',
     name: 'PortfolioIQ',
@@ -173,9 +195,9 @@ const tools = [
 // ─── Stats data ────────────────────────────────────────────────────────────
 
 const stats = [
-  { value: 6, suffix: '', label: 'PM Tools', decimals: 0 },
+  { value: 7, suffix: '', label: 'PM Tools', decimals: 0 },
   { value: 13, suffix: '', label: 'Competitors tracked', decimals: 0 },
-  { value: 23, suffix: '', label: 'Standards monitored', decimals: 0 },
+  { value: 146, suffix: '', label: 'Patents tracked', decimals: 0 },
   { value: 37, suffix: '', label: 'SKUs analyzed', decimals: 0 },
   { value: 1.32, suffix: 'B', label: 'Market mapped', prefix: '$', decimals: 2 },
 ];
@@ -198,7 +220,7 @@ const valueProps = [
   {
     icon: <Zap className="w-5 h-5" />,
     title: 'Enterprise-Grade UX',
-    body: '11 tabs, Gantt calendars, Kanban boards, SKU heat maps, and competitive intel engines — not student projects.',
+    body: 'Gantt calendars, Kanban boards, SKU heat maps, patent expiry timelines, and competitive intel engines — not student projects.',
     colorVar: '--tool-pmstudio',
   },
 ];

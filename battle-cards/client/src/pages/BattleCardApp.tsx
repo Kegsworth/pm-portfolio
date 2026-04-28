@@ -2043,6 +2043,7 @@ const SUITE_TOOLS = [
   { id: "crosswalkdb",label: "CrosswalkDB", url: "https://crosswalkdb-aadm.vercel.app" },
   { id: "pmstudio",   label: "PM Studio",   url: "https://pmstudio-aadm.vercel.app" },
   { id: "portfolioiq",label: "PortfolioIQ", url: "https://portfolioiq-aadm.vercel.app" },
+  { id: "iptracker",  label: "IP Tracker",  url: "https://iptracker-aadm.vercel.app" },
 ] as const;
 
 function SuiteNav({ activeTool }: { activeTool: string }) {

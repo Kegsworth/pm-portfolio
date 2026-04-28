@@ -55,6 +55,7 @@
     --tool-crosswalk: 152 55% 38%;
     --tool-pmstudio:  187 70% 40%;
     --tool-portfolioiq: 16 75% 48%;
+    --tool-iptracker:   33 68% 47%;
     --tool-commandcenter: 187 70% 40%;
 
     --shadow-2xs: 0px 1px 2px 0px hsl(30 20% 60% / 0.15);
@@ -68,8 +69,9 @@
   }
 
   * { @apply border-border; box-sizing: border-box; }
-  html { scroll-behavior: smooth; color-scheme: light; }
+  html { scroll-behavior: smooth; color-scheme: light; overflow-x: hidden; }
   body {
+    overflow-x: hidden;
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     font-family: var(--font-sans);
