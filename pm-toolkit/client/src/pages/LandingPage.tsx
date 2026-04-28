@@ -531,7 +531,7 @@ export default function LandingPage() {
             className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
             data-testid="hero-description"
           >
-Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance Systems — spanning competitive intelligence, FL/HVHZ compliance, standards tracking, SKU rationalization, and full NPD lifecycle management. Translating deep domain expertise into the structured, data-driven decisions that separate business-owner PMs from feature factories.
+Seven enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance Systems — spanning competitive intelligence, FL/HVHZ compliance, standards tracking, SKU rationalization, patent intelligence, and full NPD lifecycle management. Translating deep domain expertise into the structured, data-driven decisions that separate business-owner PMs from feature factories.
           </motion.p>
 
           {/* Stats row — animated counters */}
@@ -639,9 +639,9 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">THE SUITE</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">Six tools. One entity graph. Zero silos.</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">Seven tools. One entity graph. Zero silos.</h2>
             <p className="mt-3 text-sm text-muted-foreground max-w-2xl leading-relaxed">
-              Each tool targets a distinct PM competency — compliance, competitive strategy, regulatory intelligence, portfolio analysis, NPD management, and portfolio rationalization — all wired to a shared entity graph across 69 mapped products × 23 standards × 13 competitors.
+              Each tool targets a distinct PM competency — compliance, competitive strategy, regulatory intelligence, portfolio analysis, patent intelligence, NPD management, and portfolio rationalization — all wired to a shared entity graph across 69 mapped products × 23 standards × 13 competitors × 146 patents.
             </p>
           </motion.div>
 
@@ -670,9 +670,9 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
             className="text-center mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">ARCHITECTURE</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">One entity graph. Six tools. Zero silos.</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-display">One entity graph. Seven tools. Zero silos.</h2>
             <p className="mt-3 text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Every tool shares the same underlying data layer — a live entity graph spanning 69 mapped products, 23 standards, 10 jurisdictions, and 13 competitors. A NOA expiry in DoorSpec cascades to CodeTracker, surfaces in CrosswalkDB revenue risk, and triggers BattleCard positioning updates automatically.
+              Every tool shares the same underlying data layer — a live entity graph spanning 69 mapped products, 23 standards, 10 jurisdictions, 13 competitors, and 146 tracked patents. A NOA expiry in DoorSpec cascades to CodeTracker, surfaces in CrosswalkDB revenue risk, and triggers BattleCard positioning updates automatically. Patent expirations in IP Tracker feed directly into competitive whitespace strategy.
             </p>
           </motion.div>
 
@@ -688,7 +688,7 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
             <svg
               viewBox="0 0 520 320"
               className="w-full max-w-2xl"
-              aria-label="Entity graph showing 6 PM tools connected to central hub"
+              aria-label="Entity graph showing 7 PM tools connected to central hub"
               role="img"
             >
               {/* Connection lines — drawn first so nodes sit on top */}
@@ -737,7 +737,11 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
               <text x="390" y="265" textAnchor="middle" fill="hsl(16 90% 58%)" fontSize="7" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">PORTFOLIO</text>
               <text x="390" y="275" textAnchor="middle" fill="hsl(16 90% 58%)" fontSize="7" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">IQ</text>
 
-              {/* PM Studio — top center, repositioned */}
+              {/* IP Tracker — top center */}
+              <line x1="260" y1="160" x2="260" y2="20"  stroke="hsl(33 68% 47% / 0.35)" strokeWidth="1.5" strokeDasharray="4 3" />
+              <circle cx="260" cy="20" r="22" fill="hsl(33 68% 47% / 0.1)" stroke="hsl(33 68% 47% / 0.55)" strokeWidth="1.5" />
+              <text x="260" y="15" textAnchor="middle" fill="hsl(33 68% 47%)" fontSize="6" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">IP</text>
+              <text x="260" y="25" textAnchor="middle" fill="hsl(33 68% 47%)" fontSize="6" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">TRACKER</text>
             </svg>
           </motion.div>
 
@@ -786,7 +790,7 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
                 That breadth — sharpened by prior experience in military service and Daifuku automated facilities — taught me that the most valuable skill in hardware product management is translating deep domain knowledge into decisions that scale. Compliance tables, competitor positioning, regulatory watch lists, and certification matrices are the raw material for great PM work.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed" data-testid="about-para-3">
-                I built this suite to demonstrate exactly that: six tools that take 4+ years of automatic door expertise and turn it into structured, interactive, enterprise-grade intelligence.
+                I built this suite to demonstrate exactly that: seven tools that take 4+ years of automatic door expertise and turn it into structured, interactive, enterprise-grade intelligence.
               </p>
 
               {/* Looking for */}
@@ -918,7 +922,7 @@ Six enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance S
               tubbs.james1@gmail.com
             </a>
             <p className="text-xs text-muted-foreground text-center sm:text-right">
-              Six PM tools demonstrating enterprise-grade product thinking · Spring 2026
+              Seven PM tools demonstrating enterprise-grade product thinking · Spring 2026
             </p>
           </div>
         </div>
