@@ -738,10 +738,10 @@ Seven enterprise-grade PM tools built from four years inside ASSA ABLOY Entrance
               <text x="390" y="275" textAnchor="middle" fill="hsl(16 90% 58%)" fontSize="7" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">IQ</text>
 
               {/* IP Tracker — top center */}
-              <line x1="260" y1="160" x2="260" y2="20"  stroke="hsl(33 68% 47% / 0.35)" strokeWidth="1.5" strokeDasharray="4 3" />
-              <circle cx="260" cy="20" r="22" fill="hsl(33 68% 47% / 0.1)" stroke="hsl(33 68% 47% / 0.55)" strokeWidth="1.5" />
-              <text x="260" y="15" textAnchor="middle" fill="hsl(33 68% 47%)" fontSize="6" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">IP</text>
-              <text x="260" y="25" textAnchor="middle" fill="hsl(33 68% 47%)" fontSize="6" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">TRACKER</text>
+              <line x1="260" y1="160" x2="260" y2="52"  stroke="hsl(33 68% 47% / 0.35)" strokeWidth="1.5" strokeDasharray="4 3" />
+              <circle cx="260" cy="52" r="26" fill="hsl(33 68% 47% / 0.1)" stroke="hsl(33 68% 47% / 0.55)" strokeWidth="1.5" />
+              <text x="260" y="47" textAnchor="middle" fill="hsl(33 68% 47%)" fontSize="7" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">IP</text>
+              <text x="260" y="59" textAnchor="middle" fill="hsl(33 68% 47%)" fontSize="7" fontWeight="700" fontFamily="system-ui" letterSpacing="0.06em">TRACKER</text>
             </svg>
           </motion.div>
 
