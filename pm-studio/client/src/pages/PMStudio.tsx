@@ -5189,7 +5189,7 @@ export default function PMStudio() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
       {/* Top Nav */}
-      <header className="fixed top-0 left-0 right-0 z-50 h-14 border-b border-border bg-card/90 backdrop-blur-sm">
+      <header className="fixed top-[calc(2rem+2.25rem)] left-0 right-0 z-40 h-14 border-b border-border bg-card/90 backdrop-blur-sm">
         <div className="flex h-14 items-center justify-between px-4 md:px-6 max-w-screen-2xl mx-auto gap-3">
           {/* Logo */}
           <div className="flex items-center gap-3 flex-shrink-0">
@@ -5218,28 +5218,8 @@ export default function PMStudio() {
             </button>
           </div>
 
-          {/* Desktop Tab Nav — scrollable strip so all 10+ tabs stay accessible */}
-          <nav className="hidden lg:flex items-center flex-1 min-w-0 overflow-x-auto scrollbar-none px-1" style={{ scrollbarWidth: 'none' }}>
-            <div className="flex items-center gap-0.5 mx-auto">
-              {tabList.map((tab) => (
-                <button
-                  key={tab.id}
-                  data-testid={`tab-${tab.id}`}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-2.5 py-1.5 rounded-md text-xs font-medium transition-colors flex items-center gap-1 whitespace-nowrap flex-shrink-0 ${
-                    activeTab === tab.id
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                  }`}
-                  title={tab.label}
-                >
-                  <span className="text-sm leading-none">{tab.icon}</span>
-                  <span className="hidden xl:inline">{tab.label}</span>
-                  <span className="xl:hidden text-[10px] font-semibold">{tab.label.slice(0,5)}</span>
-                </button>
-              ))}
-            </div>
-          </nav>
+          {/* spacer so right controls stay right-aligned */}
+          <div className="flex-1" />
 
           {/* Right Controls */}
           <div className="flex items-center gap-1.5 flex-shrink-0">
@@ -5368,13 +5348,37 @@ export default function PMStudio() {
         </AnimatePresence>
       </header>
 
-      {/* Suite Nav */}
-      <div className="fixed top-14 left-0 right-0 z-40">
+      {/* Suite Nav — topmost bar, above everything */}
+      <div className="fixed top-0 left-0 right-0 z-50">
         <SuiteNav activeTool="pmstudio" />
       </div>
 
-      {/* Main Content */}
-      <main className="pt-20 min-h-screen" onClick={() => { setNotifOpen(false); setProfileOpen(false); }}>
+      {/* Tab Nav Bar — below SuiteNav */}
+      <div className="fixed top-[2rem] left-0 right-0 z-40 bg-card/95 backdrop-blur-sm border-b border-border">
+        <nav className="flex items-center overflow-x-auto scrollbar-none px-4" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <div className="flex items-center gap-0.5 py-1.5">
+            {tabList.map((tab) => (
+              <button
+                key={tab.id}
+                data-testid={`tab-${tab.id}`}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors flex items-center gap-1.5 whitespace-nowrap flex-shrink-0 ${
+                  activeTab === tab.id
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                }`}
+                title={tab.label}
+              >
+                <span className="text-sm leading-none">{tab.icon}</span>
+                <span>{tab.label}</span>
+              </button>
+            ))}
+          </div>
+        </nav>
+      </div>
+
+      {/* Main Content — pt accounts for suitenav(32) + tabnav(36) + header(56) */}
+      <main className="pt-[7.5rem] min-h-screen" onClick={() => { setNotifOpen(false); setProfileOpen(false); }}>
         <AnimatePresence mode="wait">
           {activeTab === "portfolio" && (
             <PortfolioTab
